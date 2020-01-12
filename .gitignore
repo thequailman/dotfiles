@@ -1,0 +1,3 @@
+nvim/local.vim
+node_modules
+yarn.lock

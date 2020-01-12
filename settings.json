@@ -1,0 +1,216 @@
+{
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrap": "on",
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
+  "files.eol": "\n",
+  "go.addTags": {
+    "tags": "json,database",
+    "options": "database=omitempty,json=omitempty",
+    "promptForTags": false,
+    "transform": "snakecase"
+  },
+  "go.buildOnSave": "off",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "c"
+      ],
+      "commands": [
+        ":q!"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "commands": [
+        "editor.action.revealDefinition"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "commands": [
+        "editor.fold"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "f"
+      ],
+      "commands": [
+        "git.fetch"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "c"
+      ],
+      "commands": [
+        "git.commit"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "p"
+      ],
+      "commands": [
+        "git.push"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "j"
+      ],
+      "commands": [
+        "editor.action.marker.nextInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "k"
+      ],
+      "commands": [
+        "editor.action.marker.prevInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "n"
+      ],
+      "after": [
+        "O",
+        "<Esc>",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "o"
+      ],
+      "commands": [
+        "outline.focus"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        ":q!"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.terminal.focus"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        ":wq!"
+      ]
+    },
+    {
+      "before": [
+        "<enter>"
+      ],
+      "commands": [
+        "workbench.action.keepEditor"
+      ]
+    }
+  ],
+  "vim.leader": " ",
+  "workbench.colorTheme": "Atom One Light",
+  "workbench.activityBar.visible": true,
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "git.enableSmartCommit": true,
+  "window.zoomLevel": 1,
+  "eslint.lintTask.enable": true,
+  "typescript.preferences.quoteStyle": "double",
+  "editor.fontFamily": "'Cascadia Code'",
+  "editor.fontWeight": "normal",
+  "go.lintTool": "golangci-lint",
+  "vim.camelCaseMotion.enable": true,
+  "vim.changeWordIncludesWhitespace": true,
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "[javascript]": {
+    "editor.insertSpaces": false
+  },
+  "[json]": {
+    "editor.insertSpaces": false
+  },
+  "[typescript]": {
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": false
+  },
+  "files.insertFinalNewline": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.useTabStops": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "explorer.autoReveal": false,
+  "problems.autoReveal": false,
+  "editor.fontLigatures": true,
+  "terraform.telemetry.enabled": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "typescript.surveys.enabled": false,
+  "typescript.format.semicolons": "remove",
+  "terraform.format": {
+    "enabled": false,
+    "args": []
+  },
+  "terraform.languageServer": {
+    "enabled": true,
+    "args": []
+  },
+  "terraform.indexing": {
+    "enabled": false,
+    "liveIndexing": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "html.mirrorCursorOnMatchingTag": false,
+}
