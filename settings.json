@@ -180,6 +180,9 @@
   "[json]": {
     "editor.insertSpaces": false
   },
+  "[shellscript]": {
+    "editor.formatOnSave": false
+  },
   "[typescript]": {
     "editor.insertSpaces": false,
     "editor.formatOnSave": false
@@ -209,8 +212,6 @@
     "enabled": false,
     "liveIndexing": false
   },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
   "html.mirrorCursorOnMatchingTag": false,
+  "editor.formatOnSave": true,
 }
