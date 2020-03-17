@@ -1,0 +1,24 @@
+[org/gnome/terminal/legacy/profiles:]
+default='a576f6a8-bf29-4a6a-b732-c19590c5b07a'
+list=['a576f6a8-bf29-4a6a-b732-c19590c5b07a']
+
+[org/gnome/terminal/legacy/profiles:/:]
+background-color='#fdfdf4f4c1c1'
+bold-color='#000000000000'
+bold-color-same-as-fg=false
+foreground-color='#3c3c38383636'
+palette=['#fdfdf4f4c1c1', '#cccc24241d1d', '#989897971a1a', '#d7d799992121', '#454585858888', '#b1b162628686', '#68689d9d6a6a', '#66665c5c5454', '#a8a899998484', '#9d9d00000606', '#797974740e0e', '#b5b576761414', '#070766667878', '#8f8f3f3f7171', '#42427b7b5858', '#3c3c38383636']
+use-theme-colors=false
+visible-name='Default'
+
+[org/gnome/terminal/legacy/profiles:/:a576f6a8-bf29-4a6a-b732-c19590c5b07a]
+background-color='rgb(40,44,52)'
+bold-color='rgb(171,178,191)'
+bold-color-same-as-fg=false
+bold-is-bright=false
+font='Cascadia Code 12'
+foreground-color='rgb(171,178,191)'
+palette=['rgb(0,0,0)', 'rgb(224,108,117)', 'rgb(152,195,121)', 'rgb(209,154,102)', 'rgb(97,175,239)', 'rgb(198,120,221)', 'rgb(86,182,194)', 'rgb(171,178,191)', 'rgb(92,99,112)', 'rgb(224,108,117)', 'rgb(152,195,121)', 'rgb(209,154,102)', 'rgb(97,175,239)', 'rgb(198,120,221)', 'rgb(86,182,194)', 'rgb(255,255,255)']
+use-system-font=false
+use-theme-colors=false
+visible-name='Default'

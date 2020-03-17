@@ -3,7 +3,7 @@
 set -euxo pipefail
 
 FILES=(bash_aliases bash_powerline bashrc ssh/config)
-FILESCODE=(keybindings.json settings.json)
+FILES_CODE=(keybindings.json settings.json)
 WORKDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 for file in "${FILES[@]}"; do
@@ -15,7 +15,7 @@ mkdir -p ~/.config
 source "${HOME}/.bashrc"
 mkdir -p ~/.bin
 mkdir -p ~/Apps
-mkdir -p ~/Code/go
+mkdir -p ~/Code
 
 if [[ ! -e ~/.gitconfig ]]; then
     # Setup push origin tracking automatically
@@ -25,9 +25,11 @@ if [[ ! -e ~/.gitconfig ]]; then
     git config --global commit.gpgSign true
 fi
 
+dconf load / < "${WORKDIR}/dconf"
+
 if code -v; then
     extensions=(
-        akamud.vscode-theme-onelight
+        akamud.vscode-theme-onedark
         ckolkman.vscode-postgres
         davidanson.vscode-markdownlint
         dbaeumer.vscode-eslint
@@ -40,9 +42,8 @@ if code -v; then
         ms-vscode.go
         msjsdiag.debugger-for-chrome
         redhat.vscode-yaml
-	shakram02.bash-beautify
-        shinnn.stylelint
-	timonwong.shellcheck
+        stylelint.vscode-stylelint
+        timonwong.shellcheck
         vscode-icons-team.vscode-icons
         vscodevim.vim
         wayou.vscode-todo-highlight
@@ -50,12 +51,7 @@ if code -v; then
     for extension in "${extensions[@]}"; do
         code --install-extension ${extension} --force
     done
-    for file in "${FILESCODE[@]}"; do
+    for file in "${FILES_CODE[@]}"; do
         ln -sf "${WORKDIR}/${file}" "${HOME}/.config/Code/User/${file}"
     done
-fi
-
-if ! fc-list | grep Cascadia; then
-    mkdir -p ~/.local/share/fonts
-    curl -L https://github.com/microsoft/cascadia-code/releases/download/v1909.16/Cascadia.ttf -o ~/.local/share/fonts/Cascadia.ttf
 fi

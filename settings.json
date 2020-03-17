@@ -159,7 +159,6 @@
     }
   ],
   "vim.leader": " ",
-  "workbench.colorTheme": "Atom One Light",
   "workbench.activityBar.visible": true,
   "workbench.iconTheme": "vscode-icons",
   "vsicons.dontShowNewVersionMessage": true,
@@ -200,10 +199,6 @@
   "workbench.startupEditor": "newUntitledFile",
   "typescript.surveys.enabled": false,
   "typescript.format.semicolons": "remove",
-  "terraform.format": {
-    "enabled": false,
-    "args": []
-  },
   "terraform.languageServer": {
     "enabled": true,
     "args": []
@@ -213,5 +208,12 @@
     "liveIndexing": false
   },
   "html.mirrorCursorOnMatchingTag": false,
-  "editor.formatOnSave": true,
+  "terraform.paths": [
+    ".bin/terraform",
+    "terraform"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "workbench.colorTheme": "Atom One Dark"
 }
