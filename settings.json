@@ -166,7 +166,7 @@
   "window.zoomLevel": 1,
   "eslint.lintTask.enable": true,
   "typescript.preferences.quoteStyle": "double",
-  "editor.fontFamily": "'Cascadia Code'",
+  "editor.fontFamily": "'Cascadia Mono PL'",
   "editor.fontWeight": "normal",
   "go.lintTool": "golangci-lint",
   "vim.camelCaseMotion.enable": true,
