@@ -23,6 +23,10 @@ if [ -f "${HOME}/.bash_custom" ]; then
     source "${HOME}/.bash_custom"
 fi
 
+if [ -e "/usr/bin/direnv" ]; then
+    eval "$(direnv hook bash)"
+fi
+
 if ! shopt -oq posix; then
     if [ -f /usr/share/bash-completion/bash_completion ]; then
         . /usr/share/bash-completion/bash_completion
