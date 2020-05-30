@@ -215,5 +215,5 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "workbench.colorTheme": "Atom One Dark"
+  "workbench.colorTheme": "Solarized Light"
 }
