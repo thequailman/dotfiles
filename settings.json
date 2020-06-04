@@ -215,5 +215,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "workbench.colorTheme": "Solarized Light"
+  "workbench.colorTheme": "Solarized Light",
+  "dart.allowAnalytics": false
 }

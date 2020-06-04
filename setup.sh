@@ -47,6 +47,7 @@ if code -v; then
         vscode-icons-team.vscode-icons
         vscodevim.vim
         wayou.vscode-todo-highlight
+	dart-code.flutter
     )
     for extension in "${extensions[@]}"; do
         code --install-extension ${extension} --force
