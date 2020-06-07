@@ -216,5 +216,8 @@
     "source.fixAll.eslint": true
   },
   "workbench.colorTheme": "Solarized Light",
-  "dart.allowAnalytics": false
+  "dart.allowAnalytics": false,
+  "todo-tree.tree.showScanModeButton": false,
+  "dart.debugExternalLibraries": false,
+  "dart.debugSdkLibraries": false
 }
