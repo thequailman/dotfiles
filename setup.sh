@@ -11,6 +11,10 @@ for file in "${FILES[@]}"; do
 done
 
 mkdir -p ~/.config
+if [ "$(readlink "${HOME}/.config/nvim")" != "${WORKDIR}/nvim" ]; then
+    ln -sf "${WORKDIR}/nvim" "${HOME}/.config/nvim"
+fi
+
 # shellcheck source=bashrc
 source "${HOME}/.bashrc"
 mkdir -p ~/.bin
@@ -25,34 +29,11 @@ if [[ ! -e ~/.gitconfig ]]; then
     git config --global commit.gpgSign true
 fi
 
-dconf load / < "${WORKDIR}/dconf"
-
-if code -v; then
-    extensions=(
-        akamud.vscode-theme-onedark
-        ckolkman.vscode-postgres
-        davidanson.vscode-markdownlint
-        dbaeumer.vscode-eslint
-        eamodio.gitlens
-        esbenp.prettier-vscode
-        humao.rest-client
-        korekontrol.saltstack
-        mauve.terraform
-        ms-azuretools.vscode-docker
-        ms-vscode.go
-        msjsdiag.debugger-for-chrome
-        redhat.vscode-yaml
-        stylelint.vscode-stylelint
-        timonwong.shellcheck
-        vscode-icons-team.vscode-icons
-        vscodevim.vim
-        wayou.vscode-todo-highlight
-	dart-code.flutter
-    )
-    for extension in "${extensions[@]}"; do
-        code --install-extension ${extension} --force
-    done
-    for file in "${FILES_CODE[@]}"; do
-        ln -sf "${WORKDIR}/${file}" "${HOME}/.config/Code/User/${file}"
-    done
+if [[ ! -f ~/.bin/nvim ]]; then
+    curl -L https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage -o ~/.bin/nvim
+    chmod +x ~/.bin/nvim
 fi
+
+nvim +'PlugInstall --sync' +qa
+
+dconf load /org/gnome/terminal/ < "${WORKDIR}/dconf"
