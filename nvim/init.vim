@@ -27,11 +27,11 @@ Plug 'tpope/vim-fugitive'
 " Indent guides
 Plug 'nathanaelkane/vim-indent-guides'
 
+" One colorscheme
+Plug 'rakr/vim-one'
+
 " Testing
 Plug 'vim-test/vim-test'
-
-" Solarized theme
-Plug 'lifepillar/vim-solarized8'
 
 " Easy closures
 Plug 'tpope/vim-surround'
@@ -41,11 +41,12 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " Plugin configs
-source ~/.config/nvim/vim-solarized8.vim "Needs to be first to set colorscheme
+set termguicolors
+syntax on
+source ~/.config/nvim/vim-one.vim
 source ~/.config/nvim/ale.vim
 source ~/.config/nvim/nerdtree.vim
 source ~/.config/nvim/vim-airline.vim
-source ~/.config/nvim/vim-airline-themes.vim
 source ~/.config/nvim/vim-indent-guides.vim
 source ~/.config/nvim/vim-polygot.vim
 
