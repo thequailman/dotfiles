@@ -1,8 +1,0 @@
-[/]
-enabled-extensions=['material-shell@papyelgringo', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-
-[extensions/user-theme]
-name='Plata-Lumine-Compact'
-
-[overrides]
-edge-tiling=false

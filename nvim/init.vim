@@ -6,6 +6,9 @@ call plug#begin('~/.nvim/plugins')
 " Lint/LSP
 Plug 'dense-analysis/ale'
 
+" Closing pairs
+Plug 'Raimondi/delimitMate'
+
 " Fuzzy
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'

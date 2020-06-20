@@ -26,22 +26,36 @@ let g:ale_completion_enabled = 1
 let g:ale_open_list = 1
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
-\   'dart': [
-\     'dartfmt'
+\   'json': [
+\     'jq',
 \   ],
 \   'go': [
-\     'gofmt'
-\   ]
+\     'gofmt',
+\   ],
+\   'javascript': [
+\     'eslint',
+\   ],
+\   'typescript': [
+\     'eslint',
+\   ],
+\   'typescriptreact': [
+\     'eslint',
+\   ],
 \}
 
 let g:ale_linters = {
-\  'dart': [
-\     'analysis_server',
-\ ],
 \  'go': [
 \     'golangci-lint',
 \     'gopls'
-\ ]
+\  ],
+\  'typescript': [
+\     'eslint',
+\     'tsserver',
+\  ],
+\  'typescriptreact': [
+\     'eslint',
+\     'tsserver',
+\  ],
 \}
 
 let g:ale_go_golangci_lint_package = 1

@@ -27,6 +27,7 @@ if [[ ! -e ~/.gitconfig ]]; then
     # Setup pull origin tracking automatically
     git config --global branch.autoSetupMerge always
     git config --global commit.gpgSign true
+    git config --global pull.rebase true
 fi
 
 if [[ ! -f ~/.bin/nvim ]]; then
@@ -38,8 +39,4 @@ nvim +'PlugInstall --sync' +qa
 
 dconf load /org/gnome/desktop/interface/ < "${WORKDIR}/dconf_org-gnome-desktop-interface"
 dconf load /org/gnome/shell/ < "${WORKDIR}/dconf_org-gnome-shell"
-dconf load /org/gnome/shell/extensions/materialshell/ < "${WORKDIR}/dconf_org-gnome-shell-extensions-materialshell"
 dconf load /org/gnome/terminal/ < "${WORKDIR}/dconf_org-gnome-terminal"
-
-# Install gnome extensions
-git clone https://github.com/PapyElGringo/material-shell.git ~/.local/share/gnome-shell/extensions/material-shell@papyelgringo || true

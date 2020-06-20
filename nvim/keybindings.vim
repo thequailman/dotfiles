@@ -14,16 +14,6 @@ let mapleader = "\<Space>"
 " Map jk to escape
 inoremap jk <Esc>
 
-" Auto closures
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
-
-
 "Easy resizing
 map = <c-w>>
 map - <c-w><
@@ -53,6 +43,9 @@ nnoremap k gk
 
 " Return unsets search
 nnoremap <CR> :noh<CR>
+
+" Close window
+nnoremap <Leader>c :bp<bar>sp<bar>bn<bar>bd<CR>
 
 " Go to definition
 nnoremap <Leader>d :ALEGoToDefinition<CR>
