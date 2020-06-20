@@ -23,5 +23,5 @@ use-screen-gap=false
 
 [theme]
 panel-size=48
-primary-color='#eeeeec'
-theme='light'
+primary-color='#4e9a06'
+theme='dark'
