@@ -38,5 +38,4 @@ fi
 nvim +'PlugInstall --sync' +qa
 
 dconf load /org/gnome/desktop/interface/ < "${WORKDIR}/dconf_org-gnome-desktop-interface"
-dconf load /org/gnome/shell/ < "${WORKDIR}/dconf_org-gnome-shell"
 dconf load /org/gnome/terminal/ < "${WORKDIR}/dconf_org-gnome-terminal"
