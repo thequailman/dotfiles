@@ -21,6 +21,37 @@ mkdir -p ~/.bin
 mkdir -p ~/Apps
 mkdir -p ~/Code
 
+if code -v; then
+    extensions=(
+    	akamud.vscode-theme-onelight
+        akamud.vscode-theme-onedark
+        ckolkman.vscode-postgres
+        davidanson.vscode-markdownlint
+        dbaeumer.vscode-eslint
+        eamodio.gitlens
+        esbenp.prettier-vscode
+	golang.go
+        humao.rest-client
+        ms-azuretools.vscode-docker
+        msjsdiag.debugger-for-chrome
+        redhat.vscode-yaml
+        stylelint.vscode-stylelint
+        timonwong.shellcheck
+        vscode-icons-team.vscode-icons
+        vscodevim.vim
+        wayou.vscode-todo-highlight
+    )
+
+    for extension in "${extensions[@]}"; do
+        code --install-extension ${extension} --force
+    done
+
+    for file in "${FILES_CODE[@]}"; do
+        ln -sf "${WORKDIR}/${file}" "${HOME}/.config/Code/User/${file}"
+    done
+fi
+
+
 if [[ ! -e ~/.gitconfig ]]; then
     # Setup push origin tracking automatically
     git config --global push.default current
@@ -29,13 +60,6 @@ if [[ ! -e ~/.gitconfig ]]; then
     git config --global commit.gpgSign true
     git config --global pull.rebase true
 fi
-
-if [[ ! -f ~/.bin/nvim ]]; then
-    curl -L https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage -o ~/.bin/nvim
-    chmod +x ~/.bin/nvim
-fi
-
-nvim +'PlugInstall --sync' +qa
 
 dconf load /org/gnome/desktop/interface/ < "${WORKDIR}/dconf_org-gnome-desktop-interface"
 dconf load /org/gnome/terminal/ < "${WORKDIR}/dconf_org-gnome-terminal"

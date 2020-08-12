@@ -10,5 +10,3 @@ alias gpo='git push -u origin'
 alias gr='git rebase'
 alias gs='git status'
 alias gu='git branch -u origin/$(git symbolic-ref --short HEAD)'
-alias vim="nvim"
-alias vi="nvim"

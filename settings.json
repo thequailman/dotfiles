@@ -1,0 +1,242 @@
+{
+  "editor.renderWhitespace": "boundary",
+  "editor.wordWrap": "on",
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
+  "files.eol": "\n",
+  "go.addTags": {
+    "tags": "json,database",
+    "options": "database=omitempty,json=omitempty",
+    "promptForTags": false,
+    "transform": "snakecase"
+  },
+  "go.buildOnSave": "off",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<esc>"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "c"
+      ],
+      "commands": [
+        "editor.action.addComment"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "commands": [
+        "editor.action.revealDefinition"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "commands": [
+        "editor.fold"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "f"
+      ],
+      "commands": [
+        "git.fetch"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "c"
+      ],
+      "commands": [
+        "git.commit"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "p"
+      ],
+      "commands": [
+        "git.push"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "i"
+      ],
+      "commands": [
+        "editor.action.showHover"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "j"
+      ],
+      "commands": [
+        "editor.action.marker.nextInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "k"
+      ],
+      "commands": [
+        "editor.action.marker.prevInFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "<shift>",
+        "k"
+      ],
+      "commands": [
+        "workbench.action.keepEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "n"
+      ],
+      "after": [
+        "O",
+        "<Esc>",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "o"
+      ],
+      "commands": [
+        "outline.focus"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "q"
+      ],
+      "commands": [
+        ":q!"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.terminal.focus"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        ":wq!"
+      ]
+    },
+    {
+      "before": [
+        "<enter>"
+      ],
+      "commands": [
+        "workbench.action.keepEditor"
+      ]
+    }
+  ],
+  "vim.leader": " ",
+  "workbench.activityBar.visible": true,
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "git.enableSmartCommit": true,
+  "window.zoomLevel": 1,
+  "eslint.lintTask.enable": true,
+  "typescript.preferences.quoteStyle": "double",
+  "editor.fontFamily": "'Cascadia Mono PL'",
+  "editor.fontWeight": "normal",
+  "go.lintTool": "golangci-lint",
+  "vim.camelCaseMotion.enable": true,
+  "vim.changeWordIncludesWhitespace": true,
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "[javascript]": {
+    "editor.insertSpaces": false
+  },
+  "[json]": {
+    "editor.insertSpaces": false
+  },
+  "[shellscript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": false
+  },
+  "files.insertFinalNewline": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.useTabStops": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "explorer.autoReveal": false,
+  "problems.autoReveal": false,
+  "editor.fontLigatures": true,
+  "terraform.telemetry.enabled": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "typescript.surveys.enabled": false,
+  "typescript.format.semicolons": "remove",
+  "terraform.languageServer": {
+    "enabled": true,
+    "args": []
+  },
+  "terraform.indexing": {
+    "enabled": false,
+    "liveIndexing": false
+  },
+  "html.mirrorCursorOnMatchingTag": false,
+  "terraform.paths": [
+    ".bin/terraform",
+    "terraform"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "workbench.colorTheme": "Atom One Light",
+  "dart.allowAnalytics": false,
+  "todo-tree.tree.showScanModeButton": false,
+  "dart.debugExternalLibraries": false,
+  "dart.debugSdkLibraries": false
+}
