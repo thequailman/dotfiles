@@ -63,3 +63,8 @@ fi
 
 dconf load /org/gnome/desktop/interface/ < "${WORKDIR}/dconf_org-gnome-desktop-interface"
 dconf load /org/gnome/terminal/ < "${WORKDIR}/dconf_org-gnome-terminal"
+
+if pip3 -V; then
+    pip3 install qmk
+    qmk setup
+fi

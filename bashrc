@@ -42,7 +42,7 @@ fi
 export CLICOLOR=1
 export EDITOR="code -w"
 export GOPATH=${HOME}/.go
-export PATH=${HOME}/.bin:${HOME}/.go/bin:${HOME}/.node_modules/bin:${PATH}
+export PATH=${HOME}/.bin:${HOME}/.go/bin:${HOME}/.node_modules/bin:${HOME}/.local/bin:${PATH}
 export VISUAL="code -w"
 
 # shellcheck source=bash_powerline
