@@ -238,5 +238,11 @@
   "dart.allowAnalytics": false,
   "todo-tree.tree.showScanModeButton": false,
   "dart.debugExternalLibraries": false,
-  "dart.debugSdkLibraries": false
+  "dart.debugSdkLibraries": false,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "default",
+      "filenamePattern": "git-rebase-todo"
+    }
+  ]
 }
