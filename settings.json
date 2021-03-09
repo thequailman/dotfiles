@@ -191,7 +191,6 @@
   "vim.camelCaseMotion.enable": true,
   "vim.changeWordIncludesWhitespace": true,
   "go.formatTool": "goimports",
-  "go.useLanguageServer": true,
   "[javascript]": {
     "editor.insertSpaces": false
   },

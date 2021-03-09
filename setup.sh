@@ -30,8 +30,10 @@ if code -v; then
         dbaeumer.vscode-eslint
         eamodio.gitlens
         esbenp.prettier-vscode
-	golang.go
+        golang.go
+        gruntfuggly.todo-tree
         humao.rest-client
+        korekontrol.saltstack
         ms-azuretools.vscode-docker
         msjsdiag.debugger-for-chrome
         redhat.vscode-yaml
