@@ -40,10 +40,10 @@ fi
 [[ $- == *i* ]] && stty -ixon
 
 export CLICOLOR=1
-export EDITOR="code -w"
+export EDITOR="nvim"
 export GOPATH=${HOME}/.go
 export PATH=${HOME}/.bin:${HOME}/.go/bin:${HOME}/.node_modules/bin:${HOME}/.local/bin:${PATH}
-export VISUAL="code -w"
+export VISUAL="nvim"
 
 # shellcheck source=bash_powerline
 source "${HOME}/.bash_powerline"
